@@ -1,0 +1,25 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+.dropbox
+chapters/backup/
+img/
+chapters/Output/
+chapters/change_chaps.py
+*.pyc
+*.m~
+thesis.aux
+thesis.bbl
+thesis.blg
+thesis.lof
+thesis.lot
+thesis.out
+thesis.synctex.gz
+thesis.toc
+*conflicted copy*
+scripts/instrs.zip
+scripts/instrs/clarinet.wav
+scripts/instrs/drums.wav
+scripts/instrs/guitarAntonio.wav
+scripts/instrs/guitarBruno.wav
+scripts/instrs/pianokeyboard.wav
+scripts/instrs/stringskeyboard.wav
+*.pdf

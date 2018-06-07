@@ -1,0 +1,253 @@
+% For printing in a4
+\documentclass[a4,11pt,twoside,openright,italian,english]{book}% twoside!
+
+% For printing with the A5 format
+%\documentclass[10pt,twoside,openright,english,italian]{book}% twoside!
+
+% Set paper size
+\usepackage[twoside=true]{geometry}
+
+
+
+%For printing with the weird format
+%\geometry{
+%	paperwidth=17cm,
+%	paperheight=24cm,
+%	margin=2cm,
+%	top=2.3cm,
+%	bindingoffset=0.4cm
+%}
+% For printing in a4
+\geometry{a4paper,
+  margin=3cm,
+  top=3.8cm,
+  bottom=4cm, 
+%  top=3.3cm,
+  bindingoffset=0.4cm
+}
+
+%Uncomment this for final prints: this just enables printing on a4 paper
+\usepackage[cam,center,a4,pdflatex,axes]{crop}
+
+\usepackage{phdthesis}
+
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{array}
+\usepackage{mdwmath}
+\usepackage{mdwtab}
+\usepackage{amsmath,amssymb}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{glossaries}
+\usepackage{listings}
+\usepackage{ragged2e}
+
+%\usepackage{subfig}[caption=false]
+
+\usepackage{wrapfig}
+
+%\usepackage[list=true]{subcaption}
+% % ATTEMPT
+\usepackage{subfig}
+\usepackage[subfigure]{tocloft}
+\setcounter{lofdepth}{2}
+
+%\usepackage{subfloat}
+
+\usepackage{booktabs}
+\usepackage{latexsym}
+\usepackage{color}
+\usepackage{soul}
+\usepackage{url}
+\usepackage{bnf}
+\usepackage{rotating}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{phdtitle}
+\usepackage{paralist}
+\usepackage{bibentry}
+%\usepackage[algochapter]{algorithm2e}
+%\usepackage[bookmarks=true,pdftex=false,bookmarksopen=true,pdfborder={0,0,0}]{hyperref}\\
+\usepackage[breaklinks=true]{hyperref}
+\usepackage[toc,page]{appendix}
+\usepackage{lscape}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{verbatim}
+\usepackage{longtable}
+\usepackage[T1]{fontenc} 
+\usepackage[latin1]{inputenc}
+
+\newcommand{\TBD}{\hl}
+%% \hyphenation{} is used to force the 
+\hyphenation{}
+
+\newtheorem{Definition}{Definition}[section]
+
+\lstset{tabsize=2,basicstyle=\footnotesize,breaklines=true}
+
+\usepackage[greek,english,italian]{babel}
+
+
+\usepackage{ulem}
+\normalem
+
+\newcommand{\argmin}[1]{\underset{#1}{\operatorname{argmin}\,}}
+\newcommand{\argmax}[1]{\underset{#1}{\operatorname{argmax}\,}}
+\usepackage{cleveref}
+
+% % DEFINITION FOR LLFs
+
+\theoremstyle{definition} % Define theorem styles here based on the definition style (used for definitions and examples)
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corol}{Corollary}
+
+\theoremstyle{plain} % Define theorem styles here based on the plain style (used for theorems, lemmas, propositions)
+\newtheorem{theorem}{Theorem}
+
+\theoremstyle{remark} % Define theorem styles here based on the remark style (used for remarks and notes)
+
+\newcommand{\FE}{\text{FreeEnergy}}
+\newcommand{\E}{\text{Energy}}
+\newcommand{\T}{^\top}
+\usepackage{amsthm}
+%\usepackage{array}  
+
+
+% % DEFINITION FOR MSA
+\def\Sdbn{\mathcal{S}_\text{DBN}}
+\def\SVALID{\mathcal{S}_\text{VALID}}
+\def\S{\mathcal{S}}
+\def\STEST{\mathcal{S}_\text{TEST}}
+
+% % DEFINITION BOOTLEG
+\def\B{\texttt{B}}
+\def\O{\texttt{O}}
+\def\S{\texttt{S}}
+\def\Tboot{\mathcal{T}}
+\def\Sdbn{\mathcal{S}_\text{DBN}}
+\def\Ssvm{\mathcal{S}_\text{SVM}}
+\def\Stest{\mathcal{S}_\text{test}}
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+
+% %DEFINITIONS ANEW
+%\newcommand{\T}{^\intercal}
+
+% %DEFINITIONS DCSM
+\def\x{{\mathbf x}}
+\def\L{{\cal L}}
+
+\hypersetup{pdftitle={Linking Signal and Semantic Representations of Musical Content for Music Information Retrieval}, pdfauthor={Michele Buccoli}}
+
+\nobibliography*
+
+\department {Dipartimento di Elettronica, Informatica e Bioingegneria}
+\phdprogram{Doctoral Programme In Telecommunication Engineering}
+
+\author{Michele Buccoli}
+%\title{Developing techniques for novel scenario on Music Information Retrieval}
+\title{Linking Signal and Semantic Representations of Musical Content for Music Information Retrieval}
+%\title{Bridging Signal and Semantic Representations of Musical Content for Applications of Music Information Retrieval}
+\supervisor{Augusto Sarti}
+\cosupervisor{Dr. Massimiliano Zanoni}
+%\cosupervisor{Augusto Sarti}
+\tutor{Giuseppe Bertuccio}
+\chair{Andrea Bonarini}
+\titleimage{img/logopoli.png}
+\phdcycle{Year 2016 -- XXIX Cycle}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Let's Start The Real Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\selectlanguage{english}
+
+\maketitle
+
+\pagestyle{empty}
+\cleardoublepage
+\newpage
+
+\input{chapters/dedica}
+\cleardoublepage
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Acknowledgement
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{acknowledge}
+
+\cleardoublepage
+\newpage
+
+\pagestyle{fancy}
+% change numbering into Roman numbers for the introductory part
+\setcounter{page}{1}
+\pagenumbering{Roman}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abstract
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{chapters/abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Riassunto
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\selectlanguage{english}
+\input{chapters/sommario}
+\selectlanguage{english}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % TOC
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+\cleardoublepage
+\listoffigures
+\cleardoublepage
+\listoftables
+\newpage
+
+% Now lets go back to normal numbering
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\cleardoublepage
+\input{chapters/intro} % uncomment if you want part I
+\part{Definition and formalization of the components of the schema}
+\input{chapters/LLFs}
+\input{chapters/ML}
+\input{chapters/HLFs}
+\part{Validation of the schema for a number of application scenarios}
+\input{chapters/MSA}
+\input{chapters/Bootleg}
+\input{chapters/Violin}
+\input{chapters/DCSM}
+\input{chapters/Concl}
+\cleardoublepage
+%\listoffigures
+%\listoftables
+\begin{appendices}
+\input{chapters/appendixLHLFs}
+%\input{chapters/appendixML}
+%\input{chapters/appendixLLFs}
+\end{appendices}
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}
+%\small
+%\bibliographystyle{plain}
+\bibliographystyle{ieeetr}
+\bibliography{thesis}
+
+\end{document}
