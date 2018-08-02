@@ -1,6 +1,17 @@
 # Linking signal and semantic representations of musical content for music information retrieval
-PhD Thesis by Michele Buccoli, http://home.deib.polimi.it/buccoli, defended in February 2016.
-
+PhD Thesis by [Michele Buccoli](http://home.deib.polimi.it/buccoli), defended in February 2017. You can also download it [here](https://www.politesi.polimi.it/handle/10589/132057).
+## Cite
+```
+@phdthesis{buccoli2017linking,
+  title={Linking signal and semantic representations of musical content for music information retrieval},
+  author={Buccoli, Michele},
+  year={2017},
+  school= {Politecnico di Milano},
+  month = {2},
+  publisher={Politecnico di Milano},
+  address      = {Piazza Leonardo da Vinci, 32, 20133, Milan, Italy},
+}
+```
 ## Keywords
 music information retrieval; deep learning; machine learning; signal processing; semantic model; natural language processing
 
