@@ -1,5 +1,5 @@
 # Linking signal and semantic representations of musical content for music information retrieval
-PhD Thesis by [Michele Buccoli](http://home.deib.polimi.it/buccoli), defended in February 2017. You can also download it [here](https://www.politesi.polimi.it/handle/10589/132057).
+PhD Thesis by [Michele Buccoli](https://mbuccoli.github.io), defended in February 2017. You can also download it [here](https://www.politesi.polimi.it/handle/10589/132057).
 ## Cite
 ```
 @phdthesis{buccoli2017linking,
